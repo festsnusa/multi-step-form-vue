@@ -19,13 +19,20 @@
 </template>
 
 <script>
+import { mapStores } from 'pinia';
+import useStatesStore from '@/stores/states'
+
 export default {
   name: "StepTwo",
-  props: ["monthly", "arr", "toggle"],
+  props: ["arr", "toggle"],
+  computed: {
+    ...mapStores(useStatesStore)
+  },
   data() {
     return {
       active: 0,
-      currentPlan: ["Arcade", "$9/mo"]
+      currentPlan: ["Arcade", "$9/mo"],
+      monthly: true
     }
   },
   methods: {
@@ -39,6 +46,13 @@ export default {
       this.$emit('updatePlan', this.currentPlan)
 
     }
+  },
+  created() {
+    this.monthly = this.statesStore.monthly
+
+    this.statesStore.$subscribe((mutation, state) => {
+      this.monthly = state.monthly
+    })
   }
 }
 </script>

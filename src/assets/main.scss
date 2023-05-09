@@ -12,30 +12,30 @@ $white: hsl(0, 0%, 100%);
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url('@/assets/fonts/Ubuntu-Regular.ttf') format('ttf'),
-  url('@/assets/fonts/Ubuntu-Regular.woff') format('woff'),
-  url('@/assets/fonts/Ubuntu-Regular.svg') format('svg'),
-  url('@/assets/fonts/Ubuntu-Regular.otf') format('otf');
+  src: url('./assets/fonts/Ubuntu-Regular.ttf') format('ttf'),
+  url('./assets/fonts/Ubuntu-Regular.woff') format('woff'),
+  url('./assets/fonts/Ubuntu-Regular.svg') format('svg'),
+  url('./assets/fonts/Ubuntu-Regular.otf') format('otf');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu Medium';
-  src: url('@/assets/fonts/Ubuntu-Medium.ttf') format('ttf'),
-  url('@/assets/fonts/Ubuntu-Medium.woff') format('woff'),
-  url('@/assets/fonts/Ubuntu-Medium.svg') format('svg'),
-  url('@/assets/fonts/Ubuntu-Medium.otf') format('otf');
+  src: url('./assets/fonts/Ubuntu-Medium.ttf') format('ttf'),
+  url('./assets/fonts/Ubuntu-Medium.woff') format('woff'),
+  url('./assets/fonts/Ubuntu-Medium.svg') format('svg'),
+  url('./assets/fonts/Ubuntu-Medium.otf') format('otf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Ubuntu Bold';
-  src: url('@/assets/fonts/Ubuntu-Bold.ttf') format('ttf'),
-  url('@/assets/fonts/Ubuntu-Bold.woff') format('woff'),
-  url('@/assets/fonts/Ubuntu-Bold.svg') format('svg'),
-  url('@/assets/fonts/Ubuntu-Bold.otf') format('otf');
+  src: url('./assets/fonts/Ubuntu-Bold.ttf') format('ttf'),
+  url('./assets/fonts/Ubuntu-Bold.woff') format('woff'),
+  url('./assets/fonts/Ubuntu-Bold.svg') format('svg'),
+  url('./assets/fonts/Ubuntu-Bold.otf') format('otf');
   font-weight: 700;
   font-style: normal;
 }
@@ -84,7 +84,7 @@ hr {
 
 .header {
 
-  background-image: url('@/assets/images/bg-sidebar-mobile.svg');
+  background-image: url('./assets/images/bg-sidebar-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
@@ -377,10 +377,6 @@ hr {
 
     &--title, &--price {
       font-weight: 700;
-    }
-
-    &--change {
-      cursor: pointer;
     }
 
   }
