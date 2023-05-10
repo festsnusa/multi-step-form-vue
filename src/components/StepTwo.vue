@@ -5,7 +5,7 @@
     p.card__subtitle You have the option of monthly or yearly billing.
     .options 
       .options__box(v-for="(value, index) in arr" :key="value" :class="index === active ? 'options__box_active' : ''" @click="changePlan(value, index)")
-        img.options__image(:src= "value.src", :alt= "value.title")
+        img.options__image(:class="`options__image_${value.class}`", :alt= "value.title")
         .options__group 
           .options__title {{value.title}}
           .options__subtitle {{monthly ? value.monthly : value.yearly}}
@@ -26,7 +26,7 @@ export default {
   name: "StepTwo",
   props: ["arr", "toggle"],
   computed: {
-    ...mapStores(useStatesStore)
+    ...mapStores(useStatesStore),
   },
   data() {
     return {
@@ -45,6 +45,9 @@ export default {
 
       this.$emit('updatePlan', this.currentPlan)
 
+    },
+    img(name) {
+      return new URL(`./src/assets/images/${name}`, import.meta.url)
     }
   },
   created() {

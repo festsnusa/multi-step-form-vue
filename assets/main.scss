@@ -249,6 +249,18 @@ hr {
     margin-right: 0.8rem;
     width: 3rem;
     height: 3rem;
+
+    &_arcade {
+      content: url('@/assets/images/icon-arcade.svg');
+    }
+
+    &_advanced {
+      content: url('@/assets/images/icon-advanced.svg');
+    }
+
+    &_pro {
+      content: url('@/assets/images/icon-pro.svg');
+    }
   }
 
   &__title {

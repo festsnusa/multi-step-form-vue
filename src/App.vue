@@ -47,9 +47,9 @@ export default {
       page: 1,
       range: [2, 3, 4],
       arr: [
-        { "title": "Arcade", "monthly": "$9/mo", "yearly": "$90/yr", "src": "./src/assets/images/icon-arcade.svg" },
-        { "title": "Advanced", "monthly": "$12/mo", "yearly": "$120/yr", "src": "./src/assets/images/icon-advanced.svg" },
-        { "title": "Pro", "monthly": "$15/mo", "yearly": "$150/yr", "src": "./src/assets/images/icon-pro.svg" }
+        { "title": "Arcade", "monthly": "$9/mo", "yearly": "$90/yr", "class": "arcade" },
+        { "title": "Advanced", "monthly": "$12/mo", "yearly": "$120/yr", "class": "advanced" },
+        { "title": "Pro", "monthly": "$15/mo", "yearly": "$150/yr", "class": "pro" }
       ],
     }
   },
