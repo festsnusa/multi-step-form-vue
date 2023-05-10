@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      page: 2,
+      page: 1,
       range: [2, 3, 4],
       arr: [
         { "title": "Arcade", "monthly": "$9/mo", "yearly": "$90/yr", "class": "arcade" },
