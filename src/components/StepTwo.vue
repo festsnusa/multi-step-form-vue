@@ -55,6 +55,7 @@ export default {
 
     this.statesStore.$subscribe((mutation, state) => {
       this.monthly = state.monthly
+      this.currentPlan = this.statesStore.selectedPlan
     })
   }
 }

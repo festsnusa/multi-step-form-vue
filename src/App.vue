@@ -44,7 +44,7 @@ export default {
   },
   data() {
     return {
-      page: 1,
+      page: 2,
       range: [2, 3, 4],
       arr: [
         { "title": "Arcade", "monthly": "$9/mo", "yearly": "$90/yr", "class": "arcade" },
@@ -69,7 +69,7 @@ export default {
       this.statesStore.selectedAddons = []
     },
     updatePlan(value) {
-      this.statesStore.selectedPlan = { "title": value[0], "price": value[1] }
+      this.statesStore.selectedPlan = this.arr.find(x => x.title === value[0])
     },
     updateAddons(value, checked) {
 
