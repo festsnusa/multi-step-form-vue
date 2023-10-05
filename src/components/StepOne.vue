@@ -1,4 +1,9 @@
-<script>
+<script lang="ts">
+interface arrItems {
+  "title": string,
+  "name": string,
+  "placeholder": string,
+}
 export default {
   name: "StepOne",
   data() {
@@ -7,7 +12,7 @@ export default {
         { "title": "Name", "name": "name", "placeholder": "e.g. Stephen King" },
         { "title": "Email Address", "name": "email", "placeholder": "e.g. stephenking@lorem.com" },
         { "title": "Phone Number", "name": "phone", "placeholder": "e.g. +1 234 567 890" }
-      ],
+      ] as arrItems[],
       schema: {
         name: "required|alpha_spaces",
         email: "required|email",
